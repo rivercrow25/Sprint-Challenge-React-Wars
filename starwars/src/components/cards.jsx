@@ -18,12 +18,12 @@ const CreateCard = (props) => {
             <CardHeader tag="h3">{props.person.name}</CardHeader>
             <CardBody>
                 <CardTitle>Birth Year: {props.person.birth_year}</CardTitle>
-                <CardText>{props.person.height}</CardText>
-                <CardText>{props.person.mass}</CardText>
-                <CardText>{props.person.gender}</CardText>
+                <CardText>Height: {props.person.height}</CardText>
+                <CardText>Weight: {props.person.mass}</CardText>
+                <CardText>Gender: {props.person.gender}</CardText>
 
             </CardBody>
-            <CardFooter className="text-muted">{home.name}</CardFooter>
+            <CardFooter className="text-muted">HomeWorld: {home.name}</CardFooter>
         </Card>
     )
 }

@@ -23,9 +23,13 @@ const App = () => {
   // sync up with, if any.
 
   return (
-    data.map((item, index) => {
-      return <CreateCard key={index} person={item} />
-    })
+    <div id='container'>
+      {data.map((item, index) => {
+        return (
+          <CreateCard key={index} person={item} />
+        )
+      })}
+    </div>
   );
 }
 
